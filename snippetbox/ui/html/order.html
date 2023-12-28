@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/CSS/test.css">
+    <title>Coffee House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a class="pepega__title" href="/">Coffee house</a>
+    </header>
+    <section class="order">
+        <div class="client">
+            <input class="name_surname" id="surname" type="text" placeholder="Введите Фамилию">
+            <input class="name_surname" id="name" type="text" placeholder="Введите Имя">
+        </div>
+        <div class="main__menu">
+            <div class="menu__coffee">
+                <div class="cofee">
+                    <input class="item__check" type="checkbox" id="choice1" data-goods="expresso" name="goods">
+                    <label class="item__text" for="choice1">Эспресо 80р.</label>
+                    <input class="item__cout" id="expresso" type="number" value="0"> 
+                </div>
+                <div class="cofee">
+                    <input class="item__check" type="checkbox" id="choice2" data-goods="latte" name="goods">
+                    <label class="item__text" for="choice2">Латте 110р.</label>
+                    <input class="item__cout" id="latte" type="number" value="0"> 
+                </div>
+                <div class="cofee">
+                    <input class="item__check" type="checkbox" id="choice3" data-goods="capuchino" name="goods">
+                    <label class="item__text" for="choice3">Капучино 120р.</label>
+                    <input class="item__cout" id="capuchino" type="number" value="0"> 
+                </div>
+                <div class="cofee">
+                    <input class="item__check" type="checkbox" id="choice4" data-goods="americano" name="goods">
+                    <label class="item__text" for="choice4">Американо 90р.</label>
+                    <input class="item__cout" id="americano" type="number" value="0"> 
+                </div>
+            </div>
+            <div class="menu__food">
+                <div class="cofee">
+                    <input class="item__check" type="checkbox" id="choice5" data-goods="chocolate_muffin" name="goods">
+                    <label class="item__text" for="choice5">Шоколадный кекс 80р.</label>
+                    <input class="item__cout" id="chocolate_muffin" type="number" value="0"> 
+                </div>
+                <div class="cofee">
+                    <input class="item__check" type="checkbox" id="choice6" data-goods="blueberry_muffin" name="goods">
+                    <label class="item__text" for="choice6">Черничный кекс 90р.</label>
+                    <input class="item__cout" id="blueberry_muffin" type="number" value="0"> 
+                </div>
+                <div class="cofee">
+                    <input class="item__check" type="checkbox" id="choice7" data-goods="apple_tart" name="goods">
+                    <label class="item__text" for="choice7">Яблочный тарт 100р.</label>
+                    <input class="item__cout" id="apple_tart" type="number" value="0"> 
+                </div>
+            </div>
+        </div>
+        <p>Итого:<span class="sum"> 0 р</span></p>
+        <button class="btn">Оформить заказ</button>
+    </section>
+</body>
+<script src="/static/js/test.js"></script>
+</html>

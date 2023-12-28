@@ -1,0 +1,15 @@
+{{template "base" .}}
+
+{{define "title"}}Чек #{{.Cheque.ID}}{{end}}
+
+{{define "main"}}
+<div class='snippet'>
+    <div class='metadata'>
+        <strong>{{.Cheque.Surname}} {{.Cheque.Name}}</strong>
+    </div>
+    <pre><code>Сумма заказа: {{.Cheque.Amount}} рублей</code></pre>
+    <div class='metadata'>
+        <time>Дата оформления заказа: {{.Cheque.Order_date}}</time>
+    </div>
+</div>
+{{end}}
